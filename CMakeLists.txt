@@ -12,7 +12,7 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Add the executable
-add_executable(main main.cpp opencvFunc.cpp)
+add_executable(main init.cpp opencvFunc.cpp)
 
 # Link libraries
 target_link_libraries(main ${OpenCV_LIBS})
